@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="mnakinci.com">
+    <meta name="developer" content="AKINCI">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+    <title>mnakinci</title>
+  </head>
+  <body>
+
+    <div id="loading">
+      <img src="assets/img/loading.gif" alt="Yükleniyor...">
+    </div>
+    <div class="scrollTop" onclick="scrollTop()" >
+      <a href="#" class="to-top"><i class="fa-solid fa-up-long"></i></a>
+    </div>
+
+    <section>
+      <div class="container containernav px-0">
+        <header>
+          <div id="brand">
+            <h4 class="my-0 py-0">MNA</h4>
+          </div>
+          <nav>
+            <ul>
+              <a href="#containerone"><li>Anasayfa</li></a>
+              <a href="#containertwo"><li>Hakkımda</li></a>
+              <a href="#containerfive"><li>Hizmetlerim</li></a>
+              <a href="#containersix"><li>Portfolyo</li></a>
+              <a href="#containereight"><li>Blog</li></a>
+              <a href="#containernine"><li>İletişim</li></a>
+            </ul>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+              <ul class="mobile-menu">
+                <a href="#containerone"><li>Anasayfa</li></a>
+                <a href="#containertwo"><li>Hakkımda</li></a>
+                <a href="#containerfive"><li>Hizmetlerim</li></a>
+                <a href="#containersix"><li>Portfolyo</li></a>
+                <a href="#containereight"><li>Blog</li></a>
+                <a href="#containernine"><li>İletişim</li></a>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      </div>
+    </section>
+
+    <section class="section_one">
+      <div class="container d-md-flex px-md-0 container_one" id="containerone">
+        <div class="col-sm-12 col-md-6 my_name">
+          <div class="col-sm-12 col-md-10 my_name_is px-md-0 mx-md-0">
+            <img class="img_hand d-none d-md-block my-2" src="assets/img/hand.png" alt="">
+            <div class="container col-12 containermyname d-md-flex">
+              <h1 class="heading" data-target-resolver></h1>
+            </div>
+          </div>
+          <div class="col-12 d-flex button_one mt-2">
+            <a href="#containersix"><button type="button" name="button" onclick="window.location.href='#containerfour';" id="calismalarim" class="btn btn-xl button_two d-flex align-items-center border"><p class="mt-3 px-2">Çalışmalarım</p><i class="fa-solid fa-location-arrow"></i></button></a>
+          </div>
+          <div class="col-sm-12 col-md-3 d-flex social_media_top text-center align-items-center">
+            <a href="https://www.linkedin.com/in/muhammet-n-akinci/" target="_blank"><button type="button" name="button" class="btn btn-md border closeEditorWarning()"><i class="fa-brands fa-linkedin-in"></i></button></a>
+            <a href="https://github.com/muhammet-n-akinci" target="_blank"><button type="button" name="button" class="btn btn-md border"><i class="fa-brands fa-github"></i></button></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 img_one">
+          <img src="assets/img/img1.png" class="lazy" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="section_two">
+      <div class="container d-md-flex px-md-0 container_two" id="containertwo" >
+        <div class="row d-flex mw-100 mx-0 justify-content-between">
+          <div class="col-sm-12 col-md-5 px-md-0 text-center img_two">
+            <img src="assets/img/experience.png" alt="">
+          </div>
+          <div class="col-sm-12 col-md-6 my_about justify-content-end">
+            <div class="col-12 hakkimizda px-md-0 mx-0">
+              <h1 class="hakkimda_one">Hakkımda</h1>
+              <p class="col-12 p-0 hakkimda_two">Merhaba benim adım Muhammet Nur. Karabük Üniversitesi Bilgisayar Teknolojisi bölümünden 2017 yılında 3.1/4 ortalama ile "Onur Öğrencisi" olarak mezun oldum. Başka sektörlerde deneyim kazanmış olsam da bilgilerimi tazeleyerek sektöre yepyeni bir başlangıç yaptım. Her zaman başarının tesadüf olmadığını bilir ve ona göre çalışırım. Her zaman tertip, düzen ve çözüm odaklı çalışırım. Yaptığım ilk Web sayfama hoşgeldiniz.</p>
+            </div>
+            <div class="col-12 button_three">
+              <div class="col-sm-12 col-md-6 px-md-0 ordertwo">
+                <img src="assets/img/imza.png" alt="">
+              </div>
+              <div class="col-sm-12 col-md-6 px-md-0 orderone">
+                <button type="button" name="button" class="btn btn-md border bg-white d-flex"><p class="h5 m-0">Cv' yi İndir</p><i class="fa-solid fa-file-lines mx-2 mt-1"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_three">
+      <div class="container container_three" id="containerthree">
+        <div class="row">
+          <div class="col-sm-12 col-md-5" id="expert">
+            <div class="col-12 my_expert_area">
+              <h1 class="uzmanlik">Uzmanlık <br>Alanlarım</h1>
+              <p class="uzmanlikp my-3 my-md-5 py-3 py-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  quis nostrud</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="row px-md-0 mx-0 d-md-flex justify-content-center row-three">
+              <div class="col-sm-12 col-md-12 d-md-flex my_expert justify-content-center">
+                <button class="btn btn-md align-items-center" onclick="openExpert('yeteneklerim')"><p class="mt-3 mx-2">Yeteneklerim</p><i class="fa-solid fa-angle-up"></i></button>
+                <button class="btn btn-md align-items-center text-center" onclick="openExpert('egitimlerim')"><p class="mt-3 mx-2">Eğitimlerim</p><i class="fa-solid fa-angle-up"></i></button>
+              </div>
+              <div id="yeteneklerim" class="myexpert col-12">
+                <span onclick="this.parentElement.style.display='none'">&times;</span>
+                <div class="row col-sm-12 col-md-12 d-flex mx-0 px-md-0">
+                  <div class="col-sm-3 col-md-3 mx-0 px-5 px-md-0 yetenekicon">
+                    <i class="fa-brands fa-html5"><h6>HTML5</h6></i>
+                  </div>
+                  <div class="col-sm-3 col-md-3 mx-0 px-5 px-md-0 yetenekicon">
+                    <i class="fa-brands fa-js"><h6>JavaScript</h6></i>
+                  </div>
+                  <div class="col-sm-6 col-md-3 mx-0 px-5 px-md-0 yetenekicon">
+                    <i class="fa-brands fa-css3"><h6>CSS3</h6></i>
+                  </div>
+                  <div class="col-sm-6 col-md-3 mx-0 px-5 px-md-0 yetenekicon">
+                    <i class="fa-brands fa-bootstrap"><h6>Bootstrap</h6></i>
+                  </div>
+                </div>
+              </div>
+              <div id="egitimlerim" class="myexpert col-12">
+                <span onclick="this.parentElement.style.display='none'">&times;</span>
+                <div class="row col-12 px-5 px-md-0 mx-0 d-flex text-center justify-content-center">
+                  <div class="col-sm-12 col-md-6 px-md-0 kbulogo">
+                    <img src="assets/img/kbulogo.png" alt="">
+                  </div>
+                  <div class="col-sm-12 col-md-6 p-3 px-md-0">
+                    <h3>Bilgisayar Teknolojisi</h3>
+                    <h5>Eğitim Öğretim Yılı: 2015-2017</h5>
+                    <h6>Diploma notu: 3.1/4</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="section_five">
+      <div class="container container_five" id="containerfive">
+        <div class="row">
+           <div class="col-12 my_services">
+             <h1>Hizmetlerim,</h1>
+             <h1>Yapabileceklerim</h1>
+           </div>
+           <div class="col-12 my_services_div">
+              <div class="col-12 border-top border-dark my_service_list">
+                <div class="d-md-flex align-items-center">
+                  <h4>01</h4>
+                  <h3 class="col-sm-12 col-md-4 text-nowrap mb-0">UI/UX Design</h3>
+                  <p class="col-sm-12 col-md-6 text-truncate mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br>ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur si</p>
+                  <i class="fa-solid fa-angle-down opener"></i>
+                </div>
+                <div class="inner_content d-block">
+                  <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+              <div class="col-12 my_service_list">
+                <div class="d-md-flex align-items-center">
+                  <h4>02</h4>
+                  <h3 class="col-sm-12 col-md-4 text-nowrap mb-0">User Research</h3>
+                  <p class="col-sm-12 col-md-6 text-truncate mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br>ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur si</p>
+                  <i class="fa-solid fa-angle-down opener"></i>
+                </div>
+                <div class="inner_content d-block">
+                  <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+               <div class="col-12 my_service_list ">
+                 <div class="d-md-flex align-items-center">
+                   <h4>03</h4>
+                   <h3 class="col-sm-12 col-md-4 text-nowrap mb-0">UI Animation</h3>
+                   <p class="col-sm-12 col-md-6 text-truncate mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br>ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur si</p>
+                   <i class="fa-solid fa-angle-down opener"></i>
+                 </div>
+                 <div class="inner_content d-block">
+                   <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                 </div>
+              </div>
+               <div class="col-12 my_service_list ">
+                 <div class="d-md-flex align-items-center">
+                   <h4>04</h4>
+                   <h3 class="col-sm-12 col-md-4 text-nowrap mb-0">Product Design</h3>
+                   <p class="col-sm-12 col-md-6 text-truncate mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br>ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur si</p>
+                   <i class="fa-solid fa-angle-down opener"></i>
+                 </div>
+                 <div class="inner_content d-block">
+                   <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                 </div>
+              </div>
+           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_four">
+      <div class="container align-items-center container_four" id="containerfour">
+        <div class="row sayilar_row">
+          <div class="col-12 d-md-flex sayilar_div">
+            <div class="col-sm-12 col-md-3 sayilar">
+              <div class="value" akhi="31"><h1>31</h1></div>
+              <h5 class="text-nowrap">Ziyaret ettiğim şehirler</h5>
+            </div>
+            <div class="col-sm-12 col-md-3 sayilar">
+              <div class="value" akhi="12"><h1>12</h1></div>
+              <h5 class="text-nowrap">Uyguladığım hobiler</h5>
+            </div>
+            <div class="col-sm-12 col-md-3 sayilar">
+              <div class="value" akhi="20"><h1>20</h1></div>
+              <h5 class="text-nowrap">Toplam çalıştığım yıl sayısı</h5>
+            </div>
+            <div class="col-sm-12 col-md-3 sayilar" >
+              <div class="value" akhi="15"><h1>15</h1></div>
+              <h5 class="text-nowrap">Oynadığım resmi maçlar</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_six">
+      <div class="container container_six justify-content-center" id="containersix">
+        <div class="row row_six">
+            <div class="col-sm-12 col-md-4 text-center text-md-left p-0">
+              <h1 class="py-5">Son projelerime bakabilirsin.</h1>
+            </div>
+              <div class="row col-sm-12 p-0 text-center">
+                <div class="swiper projects">
+                <div class="swiper-wrapper swiperpadding">
+                  <div class="swiper-slide">
+                      <div class="slider_one">
+                      <img src="assets/img/slider1.png" alt="">
+                      <div class="mt-3 my-2">
+                        <h6>Youtube</h6>
+                        <h3>Araba İhracatı</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider_one">
+                      <img src="assets/img/slider2.png" alt="">
+                        <div class="mt-3 my-2">
+                          <h6>Vimeo</h6>
+                          <h3>Yemek Teslimatı</h3>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider_one">
+                      <img src="assets/img/slider3.png" alt="">
+                      <div class="mt-3 my-2">
+                        <h6>Soundcloud</h6>
+                        <h3>E-ticaret Sitesi</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider_one">
+                      <img src="assets/img/slider1.png" alt="">
+                        <div class="mt-3 my-2">
+                          <h6>Vimeo</h6>
+                          <h3>Yemek Teslimatı</h3>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider_one">
+                      <img src="assets/img/slider2.png" alt="">
+                        <div class="mt-3 my-2">
+                          <h6>Vimeo</h6>
+                          <h3>Yemek Teslimatı</h3>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next" id="swiper_btn"></div>
+              <div class="swiper-button-prev" id="swiper_btn"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_seven py-5">
+      <div class="container container_seven">
+        <div class="col-sm-12 col-md-5 mt-5 text-center text-md-left">
+          <h1>Müşterimden Geribildirim</h1>
+        </div>
+        <div class="row mt-5 d-md-flex justify-content-center">
+          <div class="col-sm-12 col-md-3 my-5 text-center img_feedback">
+            <img src="assets/img/feedback.png" alt="">
+          </div>
+          <div class="col-sm-12 col-md-8 text-center text-md-left feedback">
+            <p class="h4">“Awesome website! Easy to use and edit, it has a lot of options to  design whatever you need, it is professional and fun. I was very  successful creating my prole using designer which gave me  unbelievable reach & appreciation.</p>
+            <h3 class="mt-4">Albert Walkers</h3>
+            <p class="text-secondary">Vivaco Group</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-eight">
+      <div class="container container_eight" id="containereight">
+        <div class="row row-eight px-md-0 mx-0">
+          <div class="col-sm-12 col-md-3 mx-0 px-md-0 py-5">
+            <h1 class="mx-3 text-center text-md-left">Blog Yazılarımdan</h1>
+          </div>
+        </div>
+        <div class="row row_eight mx-0 px-md-0 d-flex justify-content-between blogrow">
+          <div class="col-sm-12 col-md-5 d-flex blogbackground justify-content-center">
+            <div class="col-6 p-2 myblogpostright">
+              <ul class="d-flex px-md-0 mx-0 justify-content-between">
+                <span class="col-6 px-0 mx-0 d-flex"><p class="small">Muhammet Nur</p><p class="small mx-2">06/08/2022</p></span>
+              </ul>
+              <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <span class="mw-100"><a><button type="button" name="button" class="btn btn-sm d-flex align-items-center">Devamını Oku<i class="fa-solid fa-paper-plane mx-2"></i></button></a></span>
+            </div>
+            <div class="col-6 blogpostimg">
+              <img src="assets/img/blogpost1.png" alt="">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-5 d-flex blogbackground justify-content-center">
+            <div class="col-6 myblogpostright">
+              <ul class="d-flex px-md-0 mx-0 justify-content-between">
+                <span class="col-6 px-0 mx-0 d-flex"><p class="small">Muhammet Nur</p><p class="small mx-2">06/08/2022</p></span>
+              </ul>
+              <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <span class="mw-100"><a><button type="button" name="button" class="btn btn-sm d-flex align-items-center">Devamını Oku<i class="fa-solid fa-paper-plane mx-2"></i></button></a></span>
+            </div>
+            <div class="col-6 blogpostimg">
+              <img src="assets/img/blogpos2.png" alt="">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-5 d-flex blogbackground justify-content-center">
+            <div class="col-6 myblogpostright">
+              <ul class="d-flex px-md-0 mx-0 justify-content-between">
+                <span class="col-6 px-0 mx-0 d-flex"><p class="small">Muhammet Nur</p><p class="small mx-2">06/08/2022</p></span>
+              </ul>
+              <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <span class="mw-100"><a><button type="button" name="button" class="btn btn-sm d-flex align-items-center">Devamını Oku<i class="fa-solid fa-paper-plane mx-2"></i></button></a></span>
+            </div>
+            <div class="col-6 blogpostimg">
+              <img src="assets/img/blogpost3.png" alt="">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-5 d-flex blogbackground justify-content-center">
+            <div class="col-6 myblogpostright">
+              <ul class="d-flex px-md-0 mx-0 justify-content-between">
+                <span class="col-6 px-0 mx-0 d-flex"><p class="small">Muhammet Nur</p><p class="small mx-2">06/08/2022</p></span>
+              </ul>
+              <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <span class="mw-100"><a><button type="button" name="button" class="btn btn-sm d-flex align-items-center">Devamını Oku<i class="fa-solid fa-paper-plane mx-2"></i></button></a></span>
+            </div>
+            <div class="col-6 blogpostimg">
+              <img src="assets/img/blogpost4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="d-none d-md-flex section_ten">
+        <div class="container">
+          <div class="row bottomlogorow">
+            <div class="col-2 bottomlogo">
+              <img src="assets/img/bottomlogo1.png" alt="">
+            </div>
+            <div class="col-2 bottomlogo">
+              <img src="assets/img/bottomlogo2.png" alt="">
+            </div>
+            <div class="col-2 bottomlogo">
+              <img src="assets/img/bottomlogo3.png" alt="">
+            </div>
+            <div class="col-2 bottomlogo">
+              <img src="assets/img/bottomlogo4.png" alt="">
+            </div>
+            <div class="col-2 bottomlogo">
+              <img src="assets/img/bottomlogo5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <section class="section_nine d-md-flex position-relative">
+          <div class="container container_nine d-md-flex" id="containernine">
+            <div class="col-sm-12 col-md-6">
+              <main>
+                <div class="wrapper">
+                  <form id="myform">
+                    <div>
+                      <label for="name">Adınız - Soyadınız</label>
+                      <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                      <label for="name">E-posta Adresiniz</label>
+                      <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                      <label for="comment">Lütfen mesajınızı yazın.</label>
+                      <textarea name="comment"></textarea>
+                    </div>
+                    <a><button type="button" name="button" class="btn btn-xl button_form d-flex align-items-center"><p class="mt-3 px-2">Gönder</p></button></a>
+                  </form>
+                </div>
+              </main>
+            </div>
+            <div class="container container_ten col-sm-12 col-md-5" id="containerten">
+              <div class="col-12 berabercalisabiliriz">
+                <h1 class=" text-white">Beraber Çalışabiliriz!</h1>
+                <p class="h5 py-4 text-secondary">İstediğiniz zaman iletişim kurmakta özgürsünüz! Projelerinizde beraber çalışarak, başarının kilidini açmaya başlayabilirsiniz!</p>
+              </div>
+              <div class="col-12 align-items-center">
+                <div class="col-12 banaulasin">
+                  <p class="text-secondary"><i class="fa-solid fa-phone"></i> Bana Ulaşın:</p>
+                  <a href="tel://+905326792601"><h5>+90 532 679 26 01</h5></a>
+                </div>
+                <div class="col-12 bana_ulas">
+                  <p class="text-secondary"><i class="fa-solid fa-envelope"></i>E-posta Gönderin:</p>
+                  <a href="mailto://mhmmtnraknc@gmail.com"><h5>mhmmtnraknc@gmail.com</h5></a>
+                </div>
+              </div>
+              <div class="col-12 d-flex social_media_bottom align-items-center">
+                <a href="https://www.linkedin.com/in/muhammet-n-akinci/" target="_blank"><button type="button" name="button" class="btn btn-md "><i class="fa-brands fa-linkedin-in"></i></button></a>
+                <a href="https://github.com/muhammet-n-akinci" target="_blank"><button type="button" name="button" class="btn btn-md "><i class="fa-brands fa-github"></i></button></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.18.13/babel.min.js"></script>
+        <script src="assets/js/app.js"></script>
+      </footer>
+    </body>
+  </html>

@@ -1,0 +1,1637 @@
+:root
+{
+  --background: #fff;
+  --check: #35393b;
+  --ball: #fff;
+  --light_bg: #f3f1e5;
+  --dark_bg: #466d66;
+  --footer_bg: #12141d;
+  --boxshadow: 0px 0px 10px 0px #b9b9b9;
+  --font: 'Alumni Sans Pinstripe';
+}
+
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+button:focus
+{
+  box-shadow: none!important;
+}
+
+/* width */
+::-webkit-scrollbar
+{
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track
+{
+  background:transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb
+{
+  background: #888;
+  border-radius: 10px;
+  position: absolute;
+  width: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+{
+  background: #555;
+}
+
+/* loading ekranı tasarım kodları */
+#loading
+{
+  position: fixed;
+  align-items:center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background-color: #fff;
+  z-index: 999999;
+}
+/* loading ekranı kodları bitiş */
+
+/* navbar tasarım kodları */
+ header a
+ {
+   text-decoration: none;
+ }
+
+ header
+ {
+   padding: 0 35px;
+   height: 50px;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ #brand
+ {
+   font-weight: bold;
+   font-size: 18px;
+   display: flex;
+   align-items: center;
+ }
+
+header ul
+{
+  width: 100%;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header ul a
+{
+color: black;
+}
+
+header ul a:hover
+{
+  text-decoration: none;
+  color: black;
+  transition: .2s;
+  transform: scale(1.1);
+}
+
+header ul a li::before
+{
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+header ul a li:hover::before
+{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+header ul li::before
+{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  border-bottom: 2px solid black;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+header ul li
+{
+  position: relative;
+  padding: 5px;
+  margin: 10px;
+}
+
+
+#hamburger-icon
+{
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div
+{
+  width: 35px;
+  height: 3px;
+  background-color: var(--dark_bg);
+  margin: 6px 0;
+  transition: 0.5s;
+}
+
+.open .bar1
+{
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2
+{
+  opacity: 0;
+}
+
+.open .bar3
+{
+  -webkit-transform: rotate(45deg) translate(-6px, 8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open
+.bar1,
+.bar2,
+.bar3
+{
+  position: relative;
+  z-index: 9999999;
+}
+
+.open .mobile-menu
+{
+  margin-top: -50px;
+  height:100%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 999999;
+}
+
+.mobile-menu
+{
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+  z-index: 1;
+  background: var(--light_bg);
+}
+/* navbar tasarım kodları bitiş */
+
+/* logo için tasarım kodları */
+.my_logo
+{
+  font-size: 40px;
+  color: black;
+  font-weight: bolder;
+}
+
+/* 1. section için tasarım kodları */
+.section_one
+{
+  height: 545px;
+  overflow:visible;
+}
+
+.container_one
+{
+  color: var(--check);
+  justify-content: center;
+  height:100%;
+  padding-bottom: 80px;
+  padding-top: 50px;
+}
+
+.container_one h1
+{
+  color: var(--check);
+}
+
+/* İsim soyisim yazan alan için tasarım kodları */
+.my_name a
+{
+  text-decoration: none;
+  color: black;
+}
+
+.my_name_is h1
+{
+  font-size: 35px;
+  color: var(--dark_bg);
+}
+
+.img_hand
+{
+  max-width: 35px;
+  max-height: 35px;
+}
+
+/* 1.section içindeki 1.buton */
+.button_one button
+{
+  width:160px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+.button_one button:hover
+{
+  background: var(--dark_bg);
+  color: var(--ball);
+  border: 0px;
+  transition: .5s all;
+  transform: scale(1.05);
+}
+
+/* 1.section içindeki sosyal medya butonları */
+.social_media_top
+{
+  justify-content: flex-start;
+  bottom: 0;
+}
+
+.social_media_top button
+{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  background: #f6f6f6;
+  margin-right: 20px;
+}
+
+.social_media_top i
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_media_top button:hover
+{
+  background: var(--dark_bg);
+  color: white;
+  transition: .5s all;
+  transform: scale(1.1) rotate(360deg);
+}
+
+/* 1.section içindeki sağdaki resim */
+.img_one
+{
+  padding: 15px;
+  animation: imgone 2s ease;
+}
+
+@keyframes imgone
+{
+  from
+  {
+    margin-left: 100%;
+  }
+  to
+  {
+    margin-left: 0%;
+  }
+}
+
+/* 2.section içindeki soldaki resim */
+.img_two
+{
+  max-width: 100%;
+  max-height: 100%;
+}
+.img_two img
+{
+  max-width: 80%;
+}
+
+/* 2.section için tasarım kodları */
+.section_two
+{
+  height: auto;
+  background: var(--dark_bg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.hakkimda_two
+{
+  margin-top: 65px;
+}
+
+.my_about
+{
+  color: white;
+  margin-left: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hakkimizda
+{
+  margin-top: -20px;
+}
+
+.button_three
+{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.button_three button
+{
+  width:200px;
+  height: 60px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_three button:hover
+{
+  transition: .5s all;
+  transform: scale(1.1);
+}
+
+/* 2.section içindeki hakkımızda yazısının altındaki imza koyulacak img alanı */
+.button_three img
+{
+  margin-top: -35px;
+  width: auto;
+  height: 150px;
+  background-color: ;
+}
+
+/* 3.section için tasarım kodları */
+.section_three
+{
+  height: 100%;
+  padding-bottom: 40px;
+}
+
+.container_three
+{
+  color: var(--check);
+}
+
+/* 3.section içindeki uzmanlık alanlarım kısmının tasarım kodları */
+.my_expert_area
+{
+  margin-top: 80px;
+}
+.uzmanlikp
+{
+  margin-top: 35px;
+}
+/* 3.section içindeki uzmanlık alanlarım kısmının altındaki buton */
+.button_four button
+{
+  width:180px;
+  height: 60px;
+  border-radius: 15px;
+  color: var(--check);
+}
+
+.button_four button:hover
+{
+  background: var(--dark_bg);
+  color: white;
+  transition: .5s;
+  transform: scale(1.1);
+}
+
+.button_four a
+{
+  text-decoration: none;
+}
+
+/* 3.section içindeki my expert alanının skills butonları */
+.my_expert button
+{
+  display: flex;
+  margin-top: 96px;
+  width: 160px;
+  height: 60px;
+  border-radius: 15px;
+  margin-left: 20px;
+  color: var(--check);
+}
+
+.my_expert button:hover
+{
+  transition: .5s ease;
+  transform: scale(1.05);
+  box-shadow: var(--boxshadow);
+}
+
+/* 4.section için tasarım kodları */
+.section_four
+{
+  position: relative;
+  padding: 50px 0;
+  overflow-y: visible;
+  /* box-shadow: 0px 0px 5px; */
+}
+.sayilar_div
+{
+  justify-content:space-around;
+}
+
+.sayilar_row
+{
+  height: 100%;
+  align-items: center;
+  padding-bottom: 85px;
+  padding-top: 30px;
+}
+
+.sayilar
+{
+  max-width: 50px;
+  max-height: 50px;
+  border-radius:50%;
+  background-color: var(--light_bg);
+}
+
+.sayilar h1
+{
+  margin-left: -20px;
+  margin-top: -20px;
+  font-family: 'Ibarra Real Nova', serif;
+  font-weight:bold;
+  font-size: 80px;
+}
+
+.sayilar h5
+{
+  margin-left: -80px;
+  margin-bottom: 0;
+}
+
+/* 5.section için tasarım kodları */
+.section_five
+{
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  background: var(--light_bg);
+}
+
+/* 5.section içindeki 4 lü liste */
+.my_service_list
+{
+  height: auto;
+  align-items: center;
+  padding: 30px;
+  border-bottom: 1px solid black;
+}
+
+.my_services_div a
+{
+  color: black;
+  text-decoration: none;
+}
+
+.my_services
+{
+  padding-left: 30px;
+}
+
+.my_service_list h4
+{
+  font-weight: lighter;
+}
+
+.my_services
+{
+  margin-top: 120px;
+}
+
+.my_services_div
+{
+  margin-top: 80px;
+  padding: 30px;
+}
+
+.my_service_list:hover
+{
+  color: white;
+  background: var(--dark_bg);
+  transition: .5s all;
+  text-decoration: none;
+}
+/* 5.sectiondaki 4 lü listede satırların en sağındaki rotate icon */
+.my_service_list i
+{
+  margin-left: 50px;
+  font-size: 30px;
+}
+
+/* 6.section için tasarım kodları */
+.section_six
+{
+  height: 760px;
+  width: 100%;
+  background: var(--dark_bg);
+}
+
+.inner_content
+{
+  height: 0px;
+  overflow: hidden;
+  transition: all .3s;
+}
+
+.open .inner_content
+{
+  height: auto;
+  padding-top: 30px;
+}
+
+.my_service_list i
+{
+  transition: .5s all;
+  transform: rotate(0deg);
+}
+
+.my_service_list.open i
+{
+  transform: rotate(180deg);
+}
+
+.slider
+{
+  width: 100%;
+  height:100%;
+}
+
+.slider_one img
+{
+  width: 95%;
+  height: 80%;
+}
+
+.img_feedback img
+{
+  max-width: 90%;
+}
+
+.feedback
+{
+  margin-top: 50px;
+  padding-left: 50px;
+}
+
+.section_seven
+{
+  background: var(--light_bg);
+}
+
+.blogbackground
+{
+  background: var(--dark_bg);
+  min-width: 48%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 20px!important;
+  color: var(--light_bg);
+}
+
+.blogbackground:hover
+{
+  transition: .5s ease;
+  transform: scale(1.02);
+}
+
+.blogbackground button
+{
+  color: var(--light_bg);
+}
+
+.blogbackground button:hover
+{
+  color: var(--light_bg);
+  transition: .2s ease;
+  transform: scale(1.01);
+}
+
+.myblogpostleft
+{
+  padding: 0;
+}
+
+.myblogpostright
+{
+  padding: 0;
+}
+.myblogpostleft ul
+{
+  list-style: none;
+}
+
+.blogpostimg
+{
+  padding: 8px;
+  overflow: hidden;
+}
+
+.blogpostimg img
+{
+  width: 100%;
+}
+
+.blogbackground button
+{
+  border: 1px inset;
+  border-radius: 5px;
+  width: auto;
+  height: auto%;
+}
+
+ul
+{
+  list-style: none;
+}
+
+.section-eight
+{
+  padding: 50px;
+}
+
+.row_eight
+{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.section_nine
+{
+  padding: 50px;
+  background: var(--footer_bg);
+  text-align: center;
+}
+
+.container_nine
+{
+  height: 100%;
+}
+
+/* bottom logo tasarım kodları */
+.section_ten
+{
+  padding: 50px;
+}
+
+.bottomlogo
+{
+  width: 100%;
+  text-align: -webkit-center;
+}
+
+.bottomlogo img
+{
+  width: 50%;
+  height: 50%;
+}
+
+.bottomlogorow
+{
+  justify-content:space-between;
+  align-items: center;
+}
+
+.bottomlogorow img
+{
+  width: 70%;
+  height: 70%;
+}
+
+.video_button_bottom
+{
+  justify-content: center;
+}
+
+.berabercalisabiliriz
+{
+  width: 100%;
+  text-align: center;
+  text-align: -webkit-center;
+}
+/* social media bottom tasarım kodları */
+.social_media_bottom
+{
+  justify-content: center;
+  bottom: -10px;
+}
+
+.social_media_bottom button
+{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  background: #f6f6f6;
+}
+
+.social_media_bottom i
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_media_bottom button:hover
+{
+  background: var(--dark_bg);
+  color: white;
+  transition: .5s all;
+  transform: scale(1.1) rotate(360deg);
+}
+
+.button_bottom a
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_bottom
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_bottom button
+{
+  width:160px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+.button_bottom button:hover
+{
+  background: var(--dark_bg);
+  color: white;
+  border: 0px;
+  transition: .5s all;
+  transform: scale(1.1);
+}
+
+.footerrow
+{
+  height: 100%;
+  padding: 40px;
+}
+
+.banaulasin
+{
+  justify-content: center;
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+.banaulasin a
+{
+  color: #fff;
+  text-decoration: none;
+}
+
+.banaulasin h5:hover
+{
+  transition: .5s ease;
+  text-decoration: none;
+  color: var(--dark_bg);
+  transform: scale(1.1);
+}
+
+.bana_ulas
+{
+  justify-content: center;
+  text-align: center;
+  text-align: -webkit-center;
+  padding: 30px;
+}
+
+.bana_ulas a
+{
+  color: #fff;
+  text-decoration: none;
+}
+
+.bana_ulas h5:hover
+{
+  transition: .5s ease;
+  text-decoration: none;
+  color: var(--dark_bg);
+  transform: scale(1.1);
+}
+
+.bana_ulas p i
+{
+  margin-right: 10px;
+}
+
+.banaulasin p i
+{
+  margin-right: 10px;
+}
+
+/* responsive kodları */
+@media(min-width: 768px){
+
+        .my_expert
+        {
+          padding-bottom: 20px;
+        }
+
+        .my_about
+        {
+          padding-top: 50px;
+        }
+
+        .section_two
+        {
+          padding:50px;
+        }
+
+        .button_three
+        {
+          margin-top: 100px;
+          display: flex;
+        }
+
+        .orderone
+        {
+          order: 1;
+        }
+        .orderone a
+        {
+          text-decoration: none;
+        }
+
+        .ordertwo
+        {
+          order: 2;
+          position: relative;
+        }
+
+        .ordertwo img
+        {
+          position: absolute;
+          margin-left: -100px;
+        }
+
+        .img_one img
+        {
+          width: 100%;
+          margin-top: -50px;
+          object-fit: contain;
+          transform: rotate(2deg);
+        }
+        .social_media_top
+        {
+          margin-top: 50px;
+          position: absolute;
+        }
+        .button_one
+        {
+          bottom: 22%;
+          position: absolute;
+        }
+}
+
+/* responsive kodları bitiş */
+#egitimlerim
+{
+  display: flex;
+}
+
+.open_tab
+{
+  display: block;
+}
+
+#swiper_btn
+{
+  margin-top: -50px;
+  color: var(--light_bg);
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next
+{
+  left: -40px!important;
+  right: auto;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev
+{
+  right: -40px!important;
+  left: auto;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction
+{
+  bottom: -20px!important;
+  left: 0;
+  width: 100%;
+}
+
+.swiper-pagination-bullet
+{
+  background: var(--light_bg)!important;
+}
+
+.my_name_is img
+{
+  margin-top: 10px;
+  margin-left: 20px;
+  transition: all .5s ease-in-out;
+  animation: handanimation 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes handanimation
+{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(-30deg);}
+}
+
+#yeteneklerim
+{
+  width: 100%;
+  height: 312px;
+  margin-top: 68px;
+  border-radius: 20px;
+  display: none;
+}
+
+#egitimlerim
+{
+  margin-top: 68px;
+  border-radius: 20px;
+  display: none;
+}
+
+#egitimlerim img
+{
+  width: 50%;
+}
+
+.row_six
+{
+  width: 100%;
+  height: 100%;
+  padding-left: 30px;
+  margin-left: 5px;
+  color: var(--light_bg);
+}
+
+.bottomlogo:hover
+{
+  transition: .5s ease-in-out;
+  transform: scale(.9);
+}
+
+.yetenekicon
+{
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+  text-align: center;
+}
+
+.yetenekicon:hover
+{
+  transition: .5s all;
+  transform: scale(1.1);
+}
+
+.yetenekicon .fa-html5:hover
+{
+  color: #e54c21;
+  transition: .5s all;
+  transform: rotate(360deg);
+}
+
+.yetenekicon .fa-js:hover
+{
+  color:#e4bd02;
+  transition: .5s all;
+  transform: rotate(360deg);
+}
+
+.yetenekicon .fa-css3:hover
+{
+  color: #2062af;
+  transition: .5s all;
+  transform: rotate(360deg);
+}
+
+.yetenekicon .fa-bootstrap:hover
+{
+  color: #7409f6;
+  transition: .5s all;
+  transform: rotate(360deg);
+}
+
+.kbulogo
+{
+  text-align: -webkit-center;
+}
+
+/* footer form tasarım kodları başlangıç*/
+form div
+{
+  margin-top: 1rem;
+}
+
+label,
+input,
+textarea
+button,
+select
+{
+  line-height: 1.2;
+  border-radius: 5px;
+  border: 0;
+}
+
+textarea
+{
+  border: 0;
+  border-radius: 5px;
+}
+
+form
+{
+  width: 30em;
+  max-width: 90%;
+  margin: 0 auto;
+  background: var(--dark_bg);
+  padding: 40px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+label
+{
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+input,
+textarea
+{
+  padding: 0.4rem;
+  width: 100%;
+  border: 1px solid white;
+}
+
+form button
+{
+  margin-top: 2rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+form .button_form
+{
+  border-radius: 15px;
+  background: var(--light_bg);
+}
+
+form button:hover
+{
+  background: var(--light_bg);
+  color: white;
+  transition: .5s all;
+  transform: scale(1.1);
+  border-radius: 15px;
+}
+/* footer form tasarım kodları bitiş */
+
+/* scroll top button tasarım kodları başlangıç*/
+.scrollTop
+{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow:hidden;
+  position: fixed;
+  bottom: 800px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+  z-index: 100000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s all;
+  animation: scrollto 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollTop.active
+{
+  bottom: 50px;
+  right: 20px;
+  visibility: visible;
+  opacity: 1;
+  text-align: center;
+}
+
+.scrollTop i
+{
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.scrollTop a
+{
+  color: white;
+}
+
+.scrollTop:hover
+{
+  transition: .5s all;
+  transform: scale(1.2);
+}
+
+@keyframes scrollto
+{
+  from{transform: translateY(10px);}
+}
+/* scroll top button tasarım kodları bitiş */
+
+.containermyname
+{
+  font-family: var(--font);
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 100%;
+}
+
+ .heading
+{
+  color: #eee;
+	font-size: 5rem;
+	font-weight: 300;
+	text-transform: ;
+}
+
+@media only screen and (max-width: 768px)
+{
+
+  .social_media_top button
+  {
+    margin-left: 20px;
+  }
+
+  form
+  {
+    margin: 0;
+    min-width: 100%;
+    background: var(--dark_bg);
+    padding: 10px;
+  }
+
+  .row
+  {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .container
+  {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container_eight
+  {
+    padding-bottom: 30px;
+  }
+
+  .myblogpostleft
+  {
+    padding: 8px;
+  }
+
+  .myblogpostright
+  {
+    padding: 8px;
+  }
+
+  .social_media_top
+  {
+    z-index: 1;
+    bottom: -30px
+  }
+
+  .my_name_is
+  {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .container_one
+  {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  nav
+  {
+    margin-top: 10px;
+  }
+
+  .containereight
+  {
+    padding: 0px!important;
+  }
+
+  .section-eight
+  {
+    padding: 0!important;
+  }
+
+  header nav ul
+  {
+    display: none;
+  }
+
+  #hamburger-icon
+  {
+    display: block;
+  }
+
+  .containermyname
+  {
+    text-align: center;
+  }
+
+  .section_nine
+  {
+    padding-right: 0;
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .kbulogo
+  {
+    text-align: -webkit-center!important;
+  }
+
+  .my_expert button
+  {
+    margin-left: 0px;
+  }
+
+  .row_six
+  {
+    height: 100%;
+    margin-left: 5px;
+    color: var(--light_bg);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px!important;
+    margin-left: -15px!important;
+  }
+
+  .sayilar_div
+  {
+    margin-top: -80px;
+  }
+  .section_four
+  {
+    padding: 50px;
+  }
+
+  .dark-mode
+  {
+    margin-left: 70%;
+    margin-top: -59px;
+    position:absolute;
+  }
+
+  .my_name_is
+  {
+    margin-top: 50px;
+  }
+
+  .section-eight
+  {
+    padding: 0;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction
+  {
+    bottom: -5px!important;
+    left: 0;
+    width: 100%;
+    display: block;
+  }
+
+  .modal-content
+  {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 100%;
+  }
+
+  .social_media_bottom
+  {
+    justify-content: center;
+  }
+
+  .footerrow
+  {
+    text-align: center;
+  }
+
+  .banaulasin
+  {
+    display: block;
+    justify-content: center;
+  }
+
+  .berabercalisabiliriz
+  {
+    padding: 50px;
+    text-align: -webkit-center;
+  }
+
+  .button_one
+  {
+    justify-content: center;
+    position: absolute;
+  }
+
+  .social_media_top
+  {
+    justify-content: center;
+    text-align: -webkit-center;
+  }
+
+  #swiper_btn
+  {
+    display: none;
+    margin-top: -50px;
+    color: var(--light_bg)!important;
+  }
+
+  .img_one
+  {
+    width: 100%;
+    margin-top:-220px;
+    position: absolute;
+  }
+
+  .img_one img
+  {
+    max-width: 98%;
+    margin-top: 100px;
+    transform: rotate(2deg);
+  }
+
+  .img_one
+  {
+    text-align: center;
+    max-width: 94%;
+    position: absolute;
+  }
+
+  .dark-mode
+  {
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    display: contents;
+    width: 30%;
+  }
+
+  .container_one
+  {
+    padding-top: 0px!important;
+  }
+
+  .my_name
+  {
+    height: 100%;
+    margin: 0px;
+  }
+
+  .img_two
+  {
+    width: 100%;
+  }
+
+  .img_two img
+  {
+    max-width: 90%;
+    margin-top: 30px;
+  }
+
+  .my_about
+  {
+    margin-left: 0px;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .button_three
+  {
+    text-align: -webkit-center;
+  }
+
+  .button_three img
+  {
+    margin-top: 0px;
+  }
+
+  .container_two
+  {
+    margin-top: 38%;
+  }
+
+  .my_expert_area
+  {
+    text-align: center;
+  }
+
+  .button_four a
+  {
+    text-align: -webkit-center;
+    padding-bottom: 0px;
+  }
+
+  .my_expert
+  {
+    text-align: -webkit-center;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 30px;
+  }
+
+  .my_expert button
+  {
+    margin-top: 35px;
+  }
+
+  .sayilar
+  {
+    margin-top: 120px;
+    font-size: 62px;
+  }
+
+  .sayilar_row
+  {
+    height: 740px;
+    align-items: flex-start;
+    text-align:-webkit-center;
+  }
+
+  .my_service_list
+  {
+    text-align: -webkit-center;
+  }
+
+  .my_service_list i
+  {
+    margin-left: 0px;
+  }
+
+  .my_services
+  {
+    text-align: center;
+  }
+
+  .slider_one
+  {
+    padding:50px;
+  }
+
+  .feedback
+  {
+    padding: 10px;
+    padding-left: 0px;
+  }
+
+  .feedback p
+  {
+    padding: 20px;
+  }
+
+  .img_feedback img
+  {
+    width: 70%;
+  }
+
+  #yeteneklerim
+  {
+    text-align: center;
+  }
+
+  #egitimlerim
+  {
+    text-align: center;
+  }
+
+  .section_two
+  {
+    overflow: visible;
+  }
+
+  .my_name_is h1
+  {
+    height: 175px;
+  }
+
+  .button_one
+  {
+    position: relative;
+    top: 35px;
+    z-index: 5;
+    padding: 20px;
+  }
+
+  .img_one img
+  {
+    margin-top: 110px;
+  }
+}
